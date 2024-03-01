@@ -6,49 +6,59 @@ This script simplifies git workflow tasks, allowing you to streamline repository
 
 ## Method
 
-$$ PREREQUESITE $$
- - SHIFT YOUR DEFAULT BRANCH FROM MASTER TO main
 
+##### $$ PREREQUESITE $$
+ - SHIFT YOUR DEFAULT BRANCH FROM MASTER TO main
 ```
  git config --global init.defaultBranch main
 
 ```
 
-1. Adding a New Repository:
+####  - MANDATORY STEP : # Copy the script.sh into your project root directory
 
-```./script.sh your_github_url_for_new_project [commit msg](commit msg is optional) ```
+### Method 1 :
+
+  ## Run this using npm -
+
+     add the following command in the script section of package.json
+        - "ghp" : "chmod +x script.sh && ./script.sh $@"
+
+     and then you can use the following commands  
+        - To add new project : npm run ghp -- github_url commit_msg(optional)
+        - To push changes : npm run ghp -- -m commit_msg
+
+
+### Method 2 -
+
+1. Adding a New Repository:
+```
+./script.sh your_github_url_for_new_project [commit msg](commit msg is optional)
+```
 
 Use code with caution.
 Replace your_github_url_for_new_project with the actual URL of your new repository (e.g., git@github.com/username/new-project.git)
 The commit msg argument is optional. If omitted, defaults to ""first commit".
 
-$$ After adding the script.sh, you need to give the permission to execute it $$
-  ```
-chmod +x script.sh
+After adding the script.sh, you need to give the permission to execute it 
+
+  ```chmod +x script.sh
 ```
 
 2. Pushing Changes to an Existing Repository:
 
-``` ./script.sh -m "commit message" ```
+```
+./script.sh -m commit message
+```
 
 Use code with caution.
 Replace "commit message" with a clear and informative description of your changes.
 Alternatively, provide it directly within single quotes or normal:
 Bash
 
-- `./script.sh -m 'Update README.md'`
-- `./script.sh -m Update README.md`
+- ``` ./script.sh -m 'Update README.md'   ```
+- ```  ./script.sh -m "Update README.md" ```
 
-Note: your current branch will be the branch which will be pushed
-Use code with caution.
-
-## Run this using npm
-add the following command in the package.json in script section
-  - "ghp" : "chmod +x script.sh && ./script.sh $@"
-
-  and theb u can use 
-   - Add new project :"npm run ghp -- githuburl commit_msg(optional)"
-   - push changes : "npm run ghp -- -m commit-msg"
+Note: if u want to push your code to the new branch then first you need to change your branch using git and use ghp to push it on the github.
 
 ## Advanced Usage
 
@@ -65,5 +75,4 @@ Refer to the official Git documentation for details on commands: https://git-scm
 We welcome pull requests for bug fixes, improvements, or additional features.
 
 ## License
-
-This script is provided under the MIT license. See the license file for details.
+This script is provided under the ISC license. See the license file for details.

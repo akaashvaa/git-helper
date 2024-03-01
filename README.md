@@ -6,9 +6,17 @@ This script simplifies git workflow tasks, allowing you to streamline repository
 
 ## Method
 
+$$ PREREQUESITE $$
+ - SHIFT YOUR DEFAULT BRANCH FROM MASTER TO main
+
+```
+ git config --global init.defaultBranch main
+
+```
+
 1. Adding a New Repository:
 
-``` ./script.sh your_github_url_for_new_project [commit msg](commit msg is optional) ```
+```./script.sh your_github_url_for_new_project [commit msg](commit msg is optional) ```
 
 Use code with caution.
 Replace your_github_url_for_new_project with the actual URL of your new repository (e.g., git@github.com/username/new-project.git)

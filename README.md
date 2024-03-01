@@ -2,33 +2,29 @@
 
 This script simplifies git workflow tasks, allowing you to streamline repository creation and commit handling on remote repositories. It reduces the need for repetitive git commands for adding, committing, and pushing changes.
 
-## Installation
 
-```
-npm install gsnap
-```
 
 ## Method
 
 1. Adding a New Repository:
 
-``` gsnap your_github_url_for_new_project [branch_name](branch name is optional) ```
+``` ./script.sh your_github_url_for_new_project [commit msg](commit msg is optional) ```
 
 Use code with caution.
 Replace your_github_url_for_new_project with the actual URL of your new repository (e.g., git@github.com/username/new-project.git)
-The branch_name argument is optional. If omitted, defaults to "Main".
+The commit msg argument is optional. If omitted, defaults to ""first commit".
 
 2. Pushing Changes to an Existing Repository:
 
-``` gsnap "commit message" ```
+``` ./script.sh -m "commit message" ```
 
 Use code with caution.
 Replace "commit message" with a clear and informative description of your changes.
 Alternatively, provide it directly within single quotes or normal:
 Bash
 
-- `gsnap 'Update README.md'`
-- `gsnap Update README.md`
+- `./script.sh -m 'Update README.md'`
+- `./script.sh -m Update README.md`
 
 Note: your current branch will be the branch which will be pushed
 Use code with caution.

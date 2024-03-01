@@ -14,6 +14,11 @@ Use code with caution.
 Replace your_github_url_for_new_project with the actual URL of your new repository (e.g., git@github.com/username/new-project.git)
 The commit msg argument is optional. If omitted, defaults to ""first commit".
 
+$$ After adding the script.sh, you need to give the permission to execute it $$
+  ```
+chmod +x script.sh
+```
+
 2. Pushing Changes to an Existing Repository:
 
 ``` ./script.sh -m "commit message" ```
@@ -28,6 +33,14 @@ Bash
 
 Note: your current branch will be the branch which will be pushed
 Use code with caution.
+
+## Run this using npm
+add the following command in the package.json in script section
+  - "ghp" : "chmod +x script.sh && ./script.sh $@"
+
+  and theb u can use 
+   - Add new project :"npm run ghp -- githuburl commit_msg(optional)"
+   - push changes : "npm run ghp -- -m commit-msg"
 
 ## Advanced Usage
 

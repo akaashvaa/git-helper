@@ -10,7 +10,7 @@ case "$1" in
 "help")
 	echo " ------------------------------------- Instructions ----------------------------------- "
 	echo "1. To add a new repository: npm run ghp -- your_github_url_for_new_project commit_msg(optional)"
-	echo '2. To push to an existing repository: npm run ghp -- commit_msg or "commit msg" or commit msg '
+	echo '2. To push to an existing repository: npm run ghp -- -m commit_msg or "commit msg" or commit msg '
 	;;
 https*://*.git | git@*.git)
 	message="first commit"

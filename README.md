@@ -45,7 +45,7 @@ chmod +x script.sh
 ```
 #### 1. Add a New Repository:
 ```
-./script.sh your_github_url_for_new_project [commit msg](commit msg is optional)
+./script.sh github_url commit_msg(optional)
 ```
 
 #### 2. Push Changes to an Existing Repository:

@@ -2,6 +2,7 @@
   "name": "githelper125",
   "version": "1.0.4",
   "description": "This small script will help you to save your time from repetitive task of git",
+  "preferGlobal": true,
   "bin": {
     "ghp": "./index.js"
   },

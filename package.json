@@ -1,6 +1,6 @@
 {
   "name": "githelper125",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This small script will help you to save your time from repetitive task of git",
   "bin": {
     "ghp": "./index.js"

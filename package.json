@@ -1,6 +1,6 @@
 {
   "name": "githelper125",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "This small script will help you to save your time from repetitive task of git",
   "preferGlobal": true,
   "bin": {

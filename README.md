@@ -14,18 +14,41 @@ You can install this CLI tool globally using npm:
 npm install -g githelper125
 ```
 
-## "ghp help"
+## Helper command
+
+```
+ghp help
+```
 
 - use the upper command to know more
 
-## Initiate and Push to the new reposity.
+## 1. Initiate and Push to the new reposity.
 
 ```
 ghp YOUR_GITHUB_URL
 ```
 
-## Push to the existing reposity.
+## 2. Push to the existing reposity.
 
 ```
 ghp -m YOUR_COMMIT_MSG
+```
+
+## Now u don't need to use these repetitive commands ❌❌❌
+
+1.
+
+```git init
+  git add .
+  git commit -m 'Initial commit'
+  git remote add origin repository_url
+  git push -u origin master
+```
+
+2.
+
+```
+    git add .
+    git commit -m "commit message"
+    git push origin main
 ```

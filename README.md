@@ -1,5 +1,7 @@
 # ghp CLI Tool
 
+## Make sure you are installing it Globally
+
 This script simplifies git workflow tasks, allowing you to streamline repository creation and commit handling on remote repositories. It reduces the need for repetitive git commands for adding, committing, and pushing changes.
 
 ## Installation

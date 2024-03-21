@@ -6,11 +6,15 @@ if [ $# -eq 0 ]; then
 	exit 1
 fi
 
+BOLD_GREEN='\e[1;32m'
+WHITE_BOLD='\e[1;37m'
+RESET='\e[0m'
+
 case "$1" in
 "help")
-	echo " ------------------------------------- Instructions ----------------------------------- "
-	echo "1. To add a new repository: ghp your_github_url_for_new_project commit_msg(optional)"
-	echo '2. To push to an existing repository: ghp -m commit_msg or "commit msg" or commit msg '
+	echo -e "${BOLD_GREEN} ------------------------------------- Instructions ----------------------------------- ${RESET}\n"
+	echo -e "${WHITE_BOLD}1. To add a new repository: \n ${BOLD_GREEN} ghp your_github_url_for_new_project commit_msg(optional) ${RESET} \n"
+	echo -e "${WHITE_BOLD}2. To push to an existing repository: \n ${BOLD_GREEN} ghp -m commit_msg or "commit msg" or commit msg ${RESET}"
 	;;
 https*://*.git | git@*.git)
 	message="first commit"

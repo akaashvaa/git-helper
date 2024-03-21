@@ -9,8 +9,8 @@ fi
 case "$1" in
 "help")
 	echo " ------------------------------------- Instructions ----------------------------------- "
-	echo "1. To add a new repository: npm run ghp -- your_github_url_for_new_project commit_msg(optional)"
-	echo '2. To push to an existing repository: npm run ghp -- -m commit_msg or "commit msg" or commit msg '
+	echo "1. To add a new repository: ghp your_github_url_for_new_project commit_msg(optional)"
+	echo '2. To push to an existing repository: ghp -m commit_msg or "commit msg" or commit msg '
 	;;
 https*://*.git | git@*.git)
 	message="first commit"
@@ -29,7 +29,7 @@ https*://*.git | git@*.git)
 	;;
 *)
 	echo "Error: didn't match with the followed pattern. "
-	echo "Use 'npm run ghp -- help' to know more."
+	echo "Use 'ghp help' to know more."
 	exit 1
 	;;
 esac

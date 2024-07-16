@@ -8,10 +8,10 @@ RESET='\e[0m'
 #  help instructions
 show_help() {
     echo -e "\n${BOLD_GREEN} ------------------------------------- Instructions ----------------------------------- ${RESET}\n"
-    echo -e "${WHITE_BOLD}1. To add a new repository: \n ${BOLD_GREEN}ghp your_github_url_for_new_project commit_msg(optional) ${RESET} \n"
-    echo -e "${WHITE_BOLD}2. To commit to the changes: \n ${BOLD_GREEN}ghp -m commit_msg ${RESET}"
-    echo -e "${WHITE_BOLD}2. To push to the commits: \n ${BOLD_GREEN}ghp -p ${RESET}"
-    echo -e "${WHITE_BOLD}3. To commit and push the changes: \n ${BOLD_GREEN}ghp -mp commit_msg ${RESET}"
+    echo -e "${WHITE_BOLD}1. To add a new repository: \n ${BOLD_GREEN}> ghp your_github_url_for_new_project commit_msg(optional) ${RESET} \n"
+    echo -e "${WHITE_BOLD}2. To commit to the changes: \n ${BOLD_GREEN}> ghp -m commit_msg ${RESET}"
+    echo -e "${WHITE_BOLD}2. To push to the commits: \n ${BOLD_GREEN}> ghp -p ${RESET}"
+    echo -e "${WHITE_BOLD}3. To commit and push the changes: \n ${BOLD_GREEN}> ghp -mp commit_msg ${RESET}"
 }
 
 # initialize a new repository and push it

@@ -20,7 +20,12 @@ npm install -g githelper125
 ghp --help
 ```
 
-- use the upper command to know more
+## Version command
+
+```
+ghp -V or ghp --version
+```
+<hr />
 
 ## 1. Initiate and Push to the new reposity.
 
@@ -33,7 +38,13 @@ ghp YOUR_GITHUB_URL commit_msg(optional)
 ghp -m YOUR_COMMIT_MSG
 ```
 
-## 3. to commit and push the changes.
+## 3. to push the commits
+
+```
+ghp -p
+```
+
+## 4. to commit and push the changes.
 
 ```
 ghp -mp YOUR_COMMIT_MSG
